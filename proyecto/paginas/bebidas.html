@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Hungry Bear Recipes - Bebidas</title>
+    <script type="text/javascript" src="../js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="../css/estilos.css" rel="stylesheet" type="text/css">
+    <link href="../css/fonts.css" rel="stylesheet" type="text/css">
+    <script src="../js/arriba.js"></script>
+</head>
+
+<body>
+    <div class="container principal">
+        <!-- Toda la pagina -->
+        <div class="row">
+            <!-- Portada -->
+            <header>
+                <!-- Dispositivos a partir de small muestran imagen -->
+                <section class="portada col-sm-12 visible-sm visible-md visible-lg">
+                    <img src="../img/cocktail-portada.jpg" class="img-responsive">
+                </section>
+                <!--Barra del Menu -->
+                <nav class="col-xs-12 col-sm-8" id="menu">
+                    <ul class="nav nav-justified">
+                        <li><a href="../paginas/index.html"><span>INICIO</span><i class="icon icon-home3"></i></a></li>
+                        <li><a href="../paginas/platos.html"><span>PLATOS</span><i class="icon icon-food"></i></a></li>
+                        <li><a href="../paginas/postres.html"><span>POSTRES</span><i class="icon icon-spoon-knife"></i></a></li>
+                        <li class="active"><a href="#"><span>BEBIDAS</span><i class="icon icon-glass"></i></a></li>
+                        <li><a data-toggle="modal" data-target="#myModal"><span>CONTACTO</span><i class="icon icon-mail"></i></a></li>
+                    </ul>
+                </nav>
+        </div>
+        </header>
+        <!-- Termina Portada -->
+        <div class="container-fluid">
+            <span class="ir-arriba icon-ctrl"></span>
+            <section class="row articulos">
+                <section class="row bebidas">
+                    <h3>
+                       Bebidas
+                    </h3>
+                    <article class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                        <div class="limite-articulo">
+                            <img src="../img/melon-mojito.jpg" class="img-responsive">
+                            <h1>
+                                <a href="../paginas/bebidas/mojito-melon.html">Mojito de Melon</a>
+                            </h1>
+                            <div>
+                                <p class="desc">Bebida fácil, rápida y fresca</p>
+                                <i class="icon icon-clock"></i>
+                                <span>15 min</span>
+                                <i class="icon icon-spoon-knife"></i>
+                                <span>4 ing</span>
+                                <i class="icon icon-heart2"></i>
+                                <span>7</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                        <div class="limite-articulo">
+                            <img src="../img/bebida-cherries-portada.jpg" class="img-responsive">
+                            <h1>
+                                <a href="../paginas/bebidas/cocktail-cereza.html">Cocktail de Cerezas</a>
+                            </h1>
+                            <div>
+                                <p class="desc">Bebida suave y dulce</p>
+                                <i class="icon icon-clock"></i>
+                                <span>15 min</span>
+                                <i class="icon icon-spoon-knife"></i>
+                                <span>4 ing</span>
+                                <i class="icon icon-heart2"></i>
+                                <span>5</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                        <div class="limite-articulo">
+                            <img src="../img/cocktail-portada.jpg" class="img-responsive">
+                            <h1>
+                                <a href="../paginas/bebidas/smoothie.html">Smoothies</a>
+                            </h1>
+                            <div>
+                                <p class="desc">Ricos en proteinas</p>
+                                <i class="icon icon-clock"></i>
+                                <span>15 min</span>
+                                <i class="icon icon-spoon-knife"></i>
+                                <span>3 ing</span>
+                                <i class="icon icon-heart2"></i>
+                                <span>8</span>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Termina SECCION BEBIDAS -->
+                </section>
+                <!-- Termina SECCION ARTICULOS -->
+            </section>
+            <!-- Termina CONTAINER PRINCIPAL -->
+        </div>
+        <footer>
+            <div>The hungry bear - Made with love ♥</div>
+        </footer>
+        <div class="container">
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">Formulario de suscripcion</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p> Si deseas suscribirte a todas nuestras noticias puedes hacerlo dejandonos tu correo!</p>
+                            <form id="formulario" autocomplete="off" action="" method="">
+                                <br>
+                                <br>
+                                <p id="campos-obli">(*) Campos obligatorios</p>
+                                <fieldset>
+                                    <legend id="datos-per">Datos personales</legend>
+                                    <label for="nombre">Nombre (*)</label>
+                                    <input type="text" id="nombre" name="nombre" required title="Ponga el nombre" placeholder="Juan Perez">
+                                    <br>
+                                    <label for="edad">Edad (*)</label>
+                                    <input type="text" id="edad" name="edad" required title="Ingrese su edad" placeholder="18">
+                                    <br>
+                                    <label for="mail">Mail (*)</label>
+                                    <input type="text" id="mail" name="mail" required title="Ingrese mail" placeholder="Mail">
+                                </fieldset>
+                                <br>
+                                <br>
+                                <fieldset>
+                                    <legend id="suscripcion">Suscripcion</legend>
+                                    <input type="radio" id="platos" name="categoria" value="1" checked="checked">
+                                    <label for="platos"> Platos </label>
+                                    <input type="radio" id="Postres" name="categoria" value="2">
+                                    <label for="Postres"> Postres </label>
+                                    <input type="radio" id="bebidas" name="categoria" value="3">
+                                    <label for="bebidas"> Bebidas </label>
+                                    <br>
+                                    <br>
+                                    <label for="subcategoria">Seleccione si prefiere una subcategoria</label>
+                                    <select id="Subcategoria">
+                                        <optgroup label="Platos">
+                                            <option value="1" selected="select">Pollo</option>
+                                            <option value="2">Carne</option>
+                                            <option value="3">Verduras</option>
+                                        </optgroup>
+                                        <optgroup label="Postres">
+                                            <option value="4">Tortas</option>
+                                            <option value="5">Flanes</option>
+                                        </optgroup>
+                                        <optgroup label="Bebidas">
+                                            <option value="6">Cocktails</option>
+                                            <option value="7">Smoothies</option>
+                                        </optgroup>
+                                    </select>
+                                </fieldset>
+                                <br>
+                                <label for="comentarios">Comentarios</label>
+                                <input type="textarea">
+                                <br>
+                                <br>
+                                <br>
+                                <input type="checkbox" id="acepto" name="acepto" required>
+                                <label for="acepto">Acepto (*)</label>
+                                <br>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <input type="submit" value="Enviar" id="boton">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  BARRA SOCIAL    -->
+        <div class="social col-sm-1 col-md-1 col-lg-1 visible-sm visible-md visible-lg">
+            <ul>
+                <li>
+                    <a href="http://www.facebook.com" target="_blank" class="icon-facebook2"></a>
+                </li>
+                <li>
+                    <a href="http://www.youtube.com" target="_blank" class="icon-youtube3"></a>
+                </li>
+                <li>
+                    <a href="http://www.instagram.com" target="_blank" class="icon-instagram"></a>
+                </li>
+                <!-- <li>
+                        <a href="http://www.pinterest.com" target="_blank" class="icon-pinterest2"></a>
+                    </li>  -->
+                <li>
+                    <a href="mailto:contacto@hungrybear.com" class="icon-mail"></a>
+                </li>
+            </ul>
+        </div>
+        <!-- FIN BARRA SOCIAL -->
+</body>
+
+</html>
